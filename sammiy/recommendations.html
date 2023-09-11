@@ -1,0 +1,90 @@
+<html>
+
+	<head>
+		<link rel = "stylesheet" type = "text/css" href ="css/styles.css" />
+		<title>Submit Recommendations</title>
+	</head>
+
+	<body>
+
+		<!-- This page allows visitors to submit their own recommendations. The form collects information about the person submitting the form, as well as information about the restaurant they are recommending. -->
+
+		<nav>
+			<img src="images/logo.png" alt="Logo" width="100" class="nav-item">
+			<a href="index.html" class="nav-item">Home</a>
+			<a href="directory.html" class="nav-item">Directory</a>
+			<a href="recommendations.html" class="nav-item">Submit Recommendations</a>
+			<a href="contact.html" class="nav-item">Contact</a>
+		</nav>
+
+		<form action="http://www.example.com/review.php" method="get">
+			<fieldset class="submitter">
+				<legend>Let Us Know Who You Are!</legend>
+				<label>Name: <input type="text" name="name" size="30" maxlength="100"></label><br /><br />
+				<label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br /><br />
+				<label for="school">Which school do you currently attend or did you graduate from?</label> 
+				<select name="school" id="school">
+					<option value="cmu">Carnegie Mellon University</option>
+					<option value="pitt">University of Pittsburgh</option>
+					<option value="duquesne">Duquesne University</option>
+					<option value="carlow">Carlow University</option>
+					<option value="point-park">Point Park University</option>
+					<option value="chatham">Chatham University</option>
+					<option value="other">Other</option>
+				</select><br /><br />
+				<label>Hometown: <input type="text" name="hometown" size="30" maxlength="100"></label><br />
+				<p>
+					What is your school year?
+					<label><input type="radio" name="school-year" value="freshman" />Freshman</label>
+					<label><input type="radio" name="school-year" value="sophomore" />Sophomore</label>
+					<label><input type="radio" name="school-year" value="junior" />Junior</label>
+					<label><input type="radio" name="school-year" value="senior" />Senior</label>
+					<label><input type="radio" name="school-year" value="grad" />Graduate Student</label>
+					<label><input type="radio" name="school-year" value="alum" />Alum</label>
+				</p>
+				<label for="favorite-cuisines">Which cuisines do you enjoy the most?</label><br />
+				<select name="favorite-cuisines" id="favorite-cuisines" multiple="multiple">
+					<option value="chinese">Chinese Cuisine</option>
+					<option value="korean">Korean Cuisine</option>
+					<option value="japanese">Japanese Cuisine</option>
+					<option value="thai">Thai Cuisine</option>
+					<option value="vietnamese">Vietnamese Cuisine</option>
+					<option value="mediterranean">Mediterranean Cuisine</option>
+					<option value="american">American Cuisine</option>
+					<option value="italian">Italian Cuisine</option>
+					<option value="other">Other Cuisine</option>
+				</select>
+			</fieldset><br />
+			
+			<fieldset class="restaurant-info">
+				<legend>Your Recommendation</legend>
+				<label>Restaurant Name: <input type="text" name="name" size="30" maxlength="100"></label><br /><br />
+				<label>Address: <input type="text" name="name" size="30" maxlength="100"></label><br /><br />
+				<label for="submitted-cuisine-type">Which type of cuisine(s) does this restaurant serve?</label><br />
+				<select name="cuisine-type" id="submitted-cuisine-type" multiple="multiple">
+					<option value="chinese">Chinese Cuisine</option>
+					<option value="korean">Korean Cuisine</option>
+					<option value="japanese">Japanese Cuisine</option>
+					<option value="thai">Thai Cuisine</option>
+					<option value="vietnamese">Vietnamese Cuisine</option>
+					<option value="mediterranean">Mediterranean Cuisine</option>
+					<option value="american">American Cuisine</option>
+					<option value="italian">Italian Cuisine</option>
+					<option value="other">Other Cuisine</option>
+				</select>
+				<p>
+					<label for="why-recommend">Why do you recommend this restaurant?</label><br />
+					<textarea rows="4" cols="40" id="why-recommend"></textarea>
+				</p>
+				<label><input type="checkbox" name="subscribe" checked="checked" /> Sign up to be notified about new food lists!</label><br /><br />
+				<input type="submit" value="Submit recommendation" />
+			</fieldset>
+		</form>
+	</body>
+
+	<footer>
+		<p><a href="index.html" class="footer-item">Return to Homepage</a> | <a href="directory.html" class="footer-item">Directory</a> | <a href="recommendations.html" class="footer-item">Submit Recommendations</a> | <a href="contact.html" class="footer-item">Contact</a> | <a href="mailto:sammiy@andrew.cmu.edu" class="footer-item">Sammi Yang</a></p>
+		<p>&copy; Sammi's Food Hub</p>
+	</footer>
+
+</html>
