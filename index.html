@@ -1,86 +1,236 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>SAMY Piano</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;1,9..40,300&family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<nav>
-			<!-- This is the navigation bar/header. This includes items that would appear on bigger screens (the full page titles), as well as an item that would only appear on smaller screens. Displays conditions are specified in the CSS code.-->
-			<a href="index.html" class="nav-item"><img src="images/logo.png" alt="Logo" class="logo"></a>
-			<p class="full-nav"><a href="" class="nav-item">Sheet Music</a></p>
-			<p class="full-nav"><a href="" class="nav-item">Piano Covers</a></p>
-			<p class="full-nav"><a href="" class="nav-item">Community</a></p>
-			<p class="full-nav"><a href="" class="nav-item">Services & Support</a></p>
-            <p class="full-nav"><a href="" class="nav-item">Contact</a></p>
-            <img src="images/menu icon.png" alt="Menu Icon" class="menu-icon">
-        </nav>
-        <div class="cover-image">
-            <!-- This is the cover image for all pages of the site. -->
-            <img src="images/piano-room.jpeg" alt="Piano Image">
-            <div class="cover-title">SAMY Piano</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--Viewport to make the page responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <!--Importing CSS, JS, Bootstrap, and more!-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+  </head>
+
+​  <!--Main Body Of About Us Page-->
+  <body>
+
+  <!--Top alert when site is loaded-->
+    <div class="container fixed-alert">
+        <div class="alert alert-secondary alert-dismissible">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>You Must Be Over The Age Of 21 To Enter This Site</strong>
         </div>
-        <div id="our-story">
-            <!-- This section explains how/why I wanted to create this website. -->
-            <img src="images/white-piano.jpeg" alt="white piano" class="our-story-image">
-            <div class="our-story-text">
-                <h1>Our Story</h1>
-                <p>In 2020, I started transcribing sheet music for songs that I loved the most, but didn’t have sheet music available online for them. I had been playing piano since I was in 3rd grade, and music had always been one of my favorite hobbies, but when I wasn’t learning classical repertoire, I loved to de-stress by playing my favorite pop songs and ballads on the piano. Here, I hope to build a community where we can all learn how to play our favorite songs, share recommendations with each other, and have fun!</p>
+      </div>
+      
+    <!--Noir Newsletter-->
+    <div class='newsLetter'>
+        <div class="col-sm-4 col-md-2 col-lg-2"><img class='topLetter' src="images/letter.png" alt="Noir Newsletter image">Noir Newsletter</div>
+    </div>
+
+    <!--Logo-->
+    <div class='logo'>
+      <a href="index.html">
+        <img class='logo' src="images/logo.png" alt="Noir Co Logo">
+      </a>
+    </div>
+    <br><br>
+​     
+    <!--Navbar-->
+    <div class="container">
+        <div class="row justify-content-center">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><h4 class="nav-underline">Home</h4> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutUs.html"><h4>About Us</h4> <span class="sr-only">(current)</span></a>
+                </li>
+      
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <h4>Products And Services    </h4>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><h4>In-Home Wine Tasting Experience</h4></a>
+                    <a class="dropdown-item" href="#"><h4>Public Wine Tasting Events</h4></a>
+                    <a class="dropdown-item" href="#"><h4>WINEtending</h4></a>
+                    <a class="dropdown-item" href="#"><h4>The WINE Box</h4></a>
+                  </div>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><h4>Partner Brands</h4> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><h4>Gallery & Testimonials</h4><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><h4>Contact</h4><span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    <br>
+
+​    <!--Overlay text over image-->
+    <div class="image-container">
+        <img src="images/pic1.png" alt="Description of your image">
+        <div class="overlay-text">
+            <h1 class="overlay">Showcasing Black-Owned Wine Brands and Celebrating the Black Wine Industry</h1>
+            
+        </div>
+    </div>
+    </div>
+​    <!--Content row 1-->
+    <div class='blackBg row'>
+        <div class="col-sm-12 col-md-6 col-lg-6 order-2 order-lg-first"><img src="images/pic2.png" alt="Noir Newsletter image"></div>
+        <div class="col-sm-12 col-md-6 col-lg-6 order-1 order-lg-last"><h2 class="text">The Noir Co. 
+            is a premier boutique wine consulting firm headquartered in 
+            Pittsburgh, Pennsylvania.<br><br><br>
+            We aim to bring more exposure to black-owned wine brands across the
+             country through our luxury wine events, featured WINE Boxes, and 
+            wine list consulting.</h2><br><br><br>
+            <h2 class="button">
+            <a id="button1">
+                Learn More About Our Story
+              </a>
+            </h2>
+        </div>
+    </div>
+
+​    <!--Content row 2-->
+    <div class="mainBody container-fluid">
+        <div class='row pt-5'>
+            <div class="col-sm-12 col-md-6 col-lg-6 order-2 order-lg-first"><h2 class="text">
+                <b>Private Wine Tasting Experience</b><br><br><br>
+                Small-group wine tasting experience in your location of choice 
+                to enhance your palate while exposing you to black-owned wine 
+                brands and their stories.
+                <br><br><br>
+                <h2 class="button">
+                    <a id="button2">
+                      Book Your Experience
+                      </a>
+                    </h2>
+            </div>
+            <div class="mx-auto circlePic col-sm-12 col-md-6 col-lg-6 order-1 order-lg-last"><img src="images/pic3.png" alt="Noir Newsletter image"></div>
+        </div>
+​
+        <br><br>
+​        <!--Content row 3-->
+        <div class="row">
+          <div class="mx-auto circlePic col-sm-12 col-md-6 col-lg-6 order-lg-first order-1">
+            <img src="images/pic4.png" alt="Noir Newsletter image">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 order-lg-last order-2">
+            <h2 class="text">
+              <b>Public Wine Tasting Events</b><br><br><br>
+              Join us in a larger group setting to share a love for wine and explore black-owned brands.
+              <br><br><br>
+              <h2 class="button">
+                <a id="button3">
+                  View Upcoming Events
+                </a>
+              </h2>
+            </h2>
+          </div>
+        </div>
+        <br><br>
+​        <!--Content row 4-->
+        <div class='row'>
+            <div class="col-sm-12 col-md-6 col-lg-6 order-lg-first order-2"><h2 class="text">
+                <b>WINEtending</b><br><br><br>
+                You bring the vibes, we serve the wine! Adding a little twist 
+                to bartending. Have us tend to wine at your next event.
+                <br><br><br>
+            <h2 class="button">
+                <a id="button4">
+                    Book Us For Your Event
+                  </a>
+                </h2>
+            </div>
+            <div class="mx-auto circlePic col-sm-12 col-md-6 col-lg-6 order-lg-last order-1"><img src="images/pic5.png" alt="Noir Newsletter image"></div>
+        </div>
+​
+        <br><br>
+​        <!--Content row 5-->
+        <div class='row'>
+            <div class="mx-auto  circlePic col-sm-12 col-md-6 col-lg-6 order-lg-first order-1"><img src="images/pic6.png" alt="Noir Newsletter image"></div>
+            <div class="col-sm-12 col-md-6 col-lg-6 order-lg-last order-2"><h2 class="text">
+                <b>The WINE Box</b><br><br><br>
+                Carefully curated luxury boxes that include a bottle of 
+                black-owned wine, a wine glass, and a wine accessory.
+                <br><br><br>
+            <h2 class="button">
+                <a id="button5">
+                    Order The WINE Box
+                  </a>
+                </h2>
             </div>
         </div>
-        <div id="about-me">
-            <!-- This section includes a background on me in relation to the theme of this website. -->
-            <img src="images/my-picture.jpg" alt="picture of sammi" class="about-me-image">
-            <div class="about-me-text">
-                <h1>About Me</h1>
-                <p>I’m Sammi, a junior at Carnegie Mellon University studying Business Administration and Statistics. I started playing piano in 2011, and later went on to start playing cello as well in 2014 when I started attending a performing arts middle school as an Instrumental Music student. Although I started playing music less when I entered high school, I always return to music as a hobby when I need to de-stress from academics. In particular, I loved playing pop songs, and I listen to American pop, Korean pop, Chinese pop, and Japanese soundtracks. My favorite genres are ballads and R&B.</p>
-            </div>
+        <br><br>
+​
+    <div class="image-container">
+        <img src="images/FAQBG.png" class="d-block w-100" alt="...">
+        <div class="overlay-text">
+​    <!--Main Carousel Reviews-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <h2 class="overlay">“A wine tasting experience that changed the way I drink wine.”
+        <br><br>
+        Client One</h2>
         </div>
-        <h1 class="other-heading">Explore</h1>
-        <div id="explore">
-            <!-- This section helps direct visitors to other pages of the website by using key words and action words that are associated with links to the other pages. -->
-            <div id="learn-new-songs">
-                <h2>Learn New Songs</h2>
-                <img src="images/playing-piano.jpeg" alt="playing piano" class="block-picture">
-                <a href="" class="block-link">Explore our sheet music offerings >></a>
-            </div>
-            <div id="listen-to-covers">
-                <h2>Listen To Covers</h2>
-                <img src="images/headphones.jpeg" alt="headphones" class="block-picture">
-                <a href="" class="block-link">Explore our piano covers >></a>
-            </div>
-            <div id="join-our-community">
-                <h2>Join Our Community</h2>
-                <img src="images/community.jpeg" alt="community" class="block-picture">
-                <a href="" class="block-link">Read our blog and join in on community discussions >></a>
-            </div>
-            <div id="grow-as-musician">
-                <h2>Grow As A Musician</h2>
-                <img src="images/learning-piano.jpeg" alt="learning piano" class="block-picture">
-                <a href="" class="block-link">Schedule a lesson or request new songs >></a>
-            </div>
+        <div class="carousel-item">
+        <h2 class="overlay">“I had an amazing event thanks to <i>The Noir Co</i>”
+        <br><br>
+        Client Two</h2>
         </div>
-        <footer>
-            <!-- Lastly, this is the footer that can help redirect visitors back to the top of the page, or to other pages of the site. It also provides shortcuts on how to contact me. -->
-            <p class="quote">"Where words fail, music speaks."</p>
-            <div class="explore-footer">
-                <h3>Explore</h3>
-                <p><a href="#cover-image">Back To Top</a></p>
-                <p><a href="">Sheet Music</a></p>
-                <p><a href="">Piano Covers</a></p>
-                <p><a href="">Community</a></p>
-                <p><a href="">Services & Support</a></p>
-            </div>
-            <div class="contact-footer">
-                <h3>Contact</h3>
-                <a href="mailto:sammiy@andrew.cmu.edu">Email: sammiy@andrew.cmu.edu</a>
-                <p>Phone Number: (xxx) xxx-xxxx</p>
-                <p>5000 Forbes Avenue <br><br> Pittsburgh, PA 15213</p>
-            </div>
-        </footer>
-	</body>
-</html>
+        <div class="carousel-item">
+        <h2 class="overlay">"I reccomend <i>The Noir Co</i> to all my friends and family!”
+        <br><br>
+        Client Three</h2>
+        </div>
+    </div>
+</div>
+</div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+​
+    </div>
+    <!--Imporing Script and bootstrap-->
+    <script src="JavaScript/javaScriptHome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+<!--Footer Consistent across all pages-->
+    <footer>
+​
+        <h2>Copyright © 2022 The Noir Co. - All Rights Reserved.<br>
+            info@TheNoirCo.com | (805) 931 NOIR (6647) | FAQs
+        </h2>
+        <br>
+        <div class="col-12">
+          <div class='row socialIcon'>
+              <div class="col-4"><img src="images/tiktok.png" alt="Noir Newsletter image"></div>
+              <div class="col-4"><img src="images/facebook.png" alt="Noir Newsletter image"></div>
+              <div class="col-4"><img src="images/instagram.png" alt="Noir Newsletter image"></div>
+          </div>
+    </footer>
+  </html>
